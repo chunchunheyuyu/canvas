@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MR_LP:3206064928</title>
+    <title></title>
     <style>
         html,body{
             margin: 0;
@@ -67,7 +67,7 @@
             y : y,
             xa : xa,
             ya : ya,
-            max : 5000
+            max : 10000
         })
     }
     // 延迟100秒开始执行动画，如果立即执行有时位置计算会出错
@@ -113,7 +113,7 @@
                     // 画线
                     ctx.beginPath();
                     ctx.lineWidth = ratio/2;
-                    ctx.strokeStyle = 'rgba(0,128,0,' + (ratio + 0.2) + ')';
+                    ctx.strokeStyle = 'rgba(50,50,50,' + (ratio + 0.2) + ')';
                     ctx.moveTo(dot.x , dot.y);
                     ctx.lineTo(d2.x , d2.y);
                     ctx.stroke();
